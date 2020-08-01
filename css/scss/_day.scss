@@ -1,0 +1,58 @@
+.day {
+    background-color: #FFF4FD;
+    color: black;
+
+    h1 {
+        background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+        box-shadow: 0 1px 0 0 #110038;
+    }
+
+    h2 {
+        background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+    }
+
+    button {
+        background: #F7C9F3;
+        color: #110038;
+    }
+
+    .mis-guifos {
+        color: #110038;
+        text-decoration: none;
+    }
+
+    .button-theme {
+        background-color: #FFF4FD;
+        :active {
+            background-color: #CCA6C9;
+        }
+    }
+
+    .theme-button-container {
+        background: #E6E6E6;
+        box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    }
+
+    .search {
+        background: #E6E6E6;
+        box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    }
+
+    #suggestions {
+        background: #E6E6E6;
+        box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    }
+
+    #make-guifos {
+        width: 130px;
+        height: 29px;
+        text-align: center;
+        line-height: 1.7;
+        color: black;
+        text-decoration: none;
+        background: #F7C9F3;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+        cursor: pointer;
+    }
+}

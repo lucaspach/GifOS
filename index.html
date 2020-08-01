@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./scripts/constans.js"></script>
+    <script src="./scripts/functions.js"></script>
+    <script src="./scripts/index.js"></script>
+    <title>GIFOS</title>
+</head>
+<body class="day">
+    <header>
+        <h1>Bienvenidos/as a Gifos.com!--------Donde los gifs están./////Número de visitas: 552.288</h1>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img id="logo" src="./assets/gifOF_logo.png" alt="logo GIFOS"> <!--Logo versión day (x defecto)-->
+            </div>
+            <div class="navbar-container">
+                <a href="./upload.html" id="make-guifos">Crear Guifos</a>
+                <div class="menu-button-container">
+                    <div class="button-chooseTheme">
+                        <button class="button-chooseTheme" id="button-theme">Elegir tema</button>
+                        <button class="button-chooseTheme" id="button-withArrow">
+                            <img src="./assets/dropdown.svg" alt="boton de cambiar tema">  
+                        </button> 
+                        <div id="theme-buttons" class="theme-button-container">
+                            <button class="button-theme" id="day">Sailor Day</button>
+                            <button class="button-theme" id="night">Sailor Night</button>
+                        </div>
+                    </div>
+                </div>
+                <a href="./upload.html#my-gifs" class="mis-guifos">Mis guifos</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="search-container">
+            <div class="search">
+                <h2>Buscar</h2>
+                <!-- <a href="#gifs-container"></a> -->
+                <div>
+                    <input id="input-search" type="text" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…"> 
+                    <button class="button-search-disabled" id="button-search"><img id="icon-search" 
+                        src="./assets/lupa_inactive.svg" alt="icono de busqueda">Buscar</button>
+                </div>
+            </div>
+            <div id="suggestions">
+                <div id="suggestion-batman" class="button-suggestion">Batman</div>
+                <div id="suggestion-RE" class="button-suggestion">Resident Evil</div>
+                <div id="suggestion-HL" class="button-suggestion">Half life</div>
+            </div>
+        </section>
+
+        <section class="recomendation-container">
+            <div class="label-bar">
+                <label>Hoy te sugerimos:</label>
+            </div> 
+            <div class="gifs-box-r">
+                <div class="gifs-recomendation-box">
+                    <h2 class="gif-title">#RECO1<img class="exit-btn" src="./assets/close.svg" alt="boton para salir"></h2>
+                </div>
+                <div class="gifs-recomendation-box">
+                    <h2 class="gif-title">#RECO2<img class="exit-btn" src="./assets/close.svg" alt="boton para salir"></h2>
+                </div>
+                <div class="gifs-recomendation-box">
+                    <h2 class="gif-title">#RECO3<img class="exit-btn" src="./assets/close.svg" alt="boton para salir"></h2>
+                </div>
+                <div class="gifs-recomendation-box">
+                    <h2 class="gif-title">#RECO4<img class="exit-btn" src="./assets/close.svg" alt="boton para salir"></h2>
+                </div>  
+            </div>
+            <div class="label-bar">
+                <label>Tendencias:</label>
+            </div>
+            <div id="gifs-container" class ="gifs-box"></div>
+        </section>
+    </main>
+</body>
+</html>

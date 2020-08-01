@@ -1,0 +1,333 @@
+main {
+    padding: 2.5% 6% 2.5% 6%;
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    align-items: center;
+  
+    .search-container {
+        display: flex;
+        //justify-content: center;
+        //padding-bottom: 3rem;
+        flex-direction: column;
+        width: 100%;
+        
+        .search {
+            //background: #E6E6E6;
+            //box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+            //width: 90vw;
+            //margin-left: 3%;
+            //margin-right: 3%;
+            height: 60px;
+            #input-search {
+                margin: 0.5em;
+                align-items: center;
+                height: 25px;
+                width: 80%;
+            }
+            .button-search-disabled {
+                //padding-right: 5em;
+                background: #E6E6E6;
+                border: 1px solid #808080;
+                box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+                color: #B4B4B4 100%;
+                width: 10%;
+                padding: 0.3rem;
+            }
+            .button-search-enabled {
+                background: #F7C9F3;
+                border: 1px solid #110038;
+                box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+                color:#997D97 100%;
+                width: 10%;
+                padding: 0.3rem;
+            } 
+        }
+        #suggestions {
+            display: none;
+            //background: #E6E6E6;
+            //box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+            //width: 100vw;
+            //margin-left: 3%;
+            ///margin-right: 3%;
+            margin-bottom: 3%;
+            height: 150px;
+            .button-suggestion {
+                margin: 0.5em;
+                border: 1px solid #110038;
+                height: 25px;
+                width: 80%;
+                cursor: pointer;
+                background-color: #F0F0F0;
+            }
+
+        }
+    }
+    .recomendation-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: space-around;
+        
+
+        .label-bar {
+            background: #FFFAFE;
+            border: 1px solid #2E32FB;
+            box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            //width: 80vw;
+            //justify-content: inherit;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            label {
+                margin-left: 5px;
+            }
+        }
+        .gifs-box-r {
+            display: flex;
+            flex-grow: 1;
+            position: relative;
+            justify-content: space-between;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            .gif {
+                width: 280px;
+                height: 280px;
+                position: relative;
+                background-position: center;
+                background-size: cover;
+                margin-top: 0.5%;
+                margin-bottom: 0.5%; 
+
+                //background-image: url(https://media3.giphy.com/media/EaMTsoYxfPpuw/giphy.gif?cid=6e9ccd94613ceba2c6a6a2065f26b8fe52924fc5856a81d1&rid=giphy.gif);
+            }
+            .gif-title {
+                position: absolute;
+                background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%); 
+                width: 280px;   
+                z-index: 999;
+            }
+            .exit-btn {
+                padding-left: 210px;
+            }
+        }
+        .gifs-box {
+            //padding: 0;
+            //margin: 3%;
+            display: flex;
+            position: relative;
+            flex-wrap: wrap;
+            //width: 1200px;
+            flex-grow: 1;
+            justify-content: space-between;
+            margin-top: 1%;
+            margin-bottom: 1%; 
+ 
+            .gif {
+                width: 280px;
+                height: 280px;
+                position: relative;
+                background-position: center;
+                background-size: cover;
+                margin-top: 0.5%;
+                margin-bottom: 0.5%; 
+
+                //background-image: url(https://media3.giphy.com/media/EaMTsoYxfPpuw/giphy.gif?cid=6e9ccd94613ceba2c6a6a2065f26b8fe52924fc5856a81d1&rid=giphy.gif);
+            }
+            .gif-title {
+                position: absolute;
+                background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%); 
+                width: 280px;   
+                z-index: 999;
+            }
+            .exit-btn {
+                padding-left: 210px;
+            }
+        } 
+    }
+
+    ////////////////////// Parte específica de UPLOAD //////////////
+    #upload-gif-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        //margin: 2em;
+        .bold-text {
+            font-weight: bold;
+        }
+
+        #text-box-container {
+            background: #E6E6E6;
+            box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+            width: 650px;
+            height: 320px;
+
+            #title-box {
+                display: flex;
+                padding: 1em;
+                #windows-image {
+                    margin-right: 10px;
+                }
+            }            
+            #text-box {
+                padding-left: 3em;
+                width: 80%;        
+                p {
+                    padding-bottom: 0.8em;
+                }
+                #list-box {
+                    list-style: none;
+                    li {
+                        line-height: 1.6em;
+                    }
+                    padding-bottom: 0.5em;
+                }
+            }
+            #buttons-container {
+                padding-left: 20em;
+                padding-bottom: 5em;
+                .button-theme-cancel {
+                    width: 130px;
+                    background: #FFF4FD;
+                    border: 1px solid #110038;
+                    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+                } 
+                #start {
+                    background: #F7C9F3;
+                    border: 1px solid #110038;
+                    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+                }               
+            }
+        }
+        #video-box-container {
+            display: none;
+            width: 650px;
+            height: 480px;
+            background: #E6E6E6;
+            box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+            h2 {
+                padding-left: 5px;
+                display: flex;
+                justify-content: space-between;
+                .exit-btn {
+                    padding-right: 5px;
+                }
+            }
+            #video-content {
+                margin: 10px;
+            }
+            .video-buttons-container {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                margin: 1em;
+                .record-btn {
+                    height: 36px;
+                    width: 144px;
+                }
+                #capture-img {
+                    width: 36px;
+                    padding-left: 0.6em;
+                    padding-right: 0.6em;
+                }
+               
+            }
+        }
+        #preview-box-container {
+            display: none;
+            width: 700px;
+            height: 440px;
+            background: #E6E6E6;
+            box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+            #preview-box {
+                display: flex;
+                flex-direction: column;
+                #preview-buttons-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    margin: 1em;
+                }
+            }
+        }
+        #success-box-container {
+            display: none;
+            width: 700px;
+            height: 380px;
+            background: #E6E6E6;
+            box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+            #finally-ok {
+                width: 144px;
+                height: 36px;
+                margin-left: 450px;
+            }
+            #success-box {
+                display: flex;
+                align-items: center;
+                margin: 1em;
+                #success-buttons-container {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 1em;
+                    h3 {
+                        padding-left: 2px;
+                    }
+                    .button-theme-cancel {
+                        height: 36px;
+                        width: 256px;
+                        margin: 5px;
+                        background: #FFF4FD;
+                        border: 1px solid #110038;
+                        box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+                    }
+                }
+            }
+        }
+
+    }
+
+    #my-gifs {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        .label-bar {
+            background: #FFFAFE;
+            border: 1px solid #2E32FB;
+            box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;
+            width: 80vw;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            label {
+                margin-left: 5px;
+            }
+        }
+        .gifs-box {
+            //padding: 0;
+            //margin: 3%;
+            display: flex;
+            position: relative;
+            flex-wrap: wrap;
+            //width: 1200px;
+            flex-grow: 1;
+            justify-content: space-between;
+            margin-top: 1%;
+            margin-bottom: 1%; 
+ 
+            .gif {
+                width: 280px;
+                height: 280px;
+                position: relative;
+                background-position: center;
+                background-size: cover;
+                margin-top: 0.5%;
+                margin-bottom: 0.5%; 
+
+                //background-image: url(https://media3.giphy.com/media/EaMTsoYxfPpuw/giphy.gif?cid=6e9ccd94613ceba2c6a6a2065f26b8fe52924fc5856a81d1&rid=giphy.gif);
+            }
+        }
+    }
+
+}

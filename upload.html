@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="./scripts/constans.js"></script>
+    <script src="./scripts/functions.js"></script>
+    <script src="./scripts/upload.js"></script>
+    <title>GifOS-Upload</title>
+</head>
+<body class="day">
+    <header>
+        <h1>Bienvenidos/as a Gifos.com!--------Donde los gifs están./////Número de visitas: 552.288</h1>
+        <div id="header-container">
+            <a href="./index.html"><img src="./assets/arrow.svg" alt="flecha volver"></a>
+            <div class="logo-container">
+                <img id="logo" src="./assets/gifOF_logo.png" alt="logo GIFOS">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="upload-gif-container">
+            <div id="text-box-container">
+                <h2>Crear Gifos</h2>
+                <div id="title-box">
+                    <img id="windows-image" src="./assets/window_img.png" alt="imagen de ventana">
+                    <h3>Aquí podrás crear tus propios guifos</h3>
+                </div>
+                <div id="text-box">
+                    <p>Crear tu <label class="bold-text">guifos</label> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. 
+                        Los pasos para crear tu guifo son: </p>
+                    <ul id="list-box">
+                        <li><label class="bold-text">1)</label>Dar permisos de acceso a la cámara (sólo por el tiempo de uso)</li>
+                        <li><label class="bold-text">2)</label>Capturar tu momento guifo</li>    
+                        <li><label class="bold-text">3)</label>Revisar el momento</li>
+                        <li><label class="bold-text">4)</label>Listo para subir y compartir!</li>
+                    </ul>
+                    <p>¿Quieres comenzar a crear tu <label class="bold-text">guifo</label> ahora?</p>
+                </div>
+                <div id="buttons-container">
+                    <button class="button-theme-cancel" id="cancel">Cancelar</button>
+                    <button class="button-theme" id="start">Comenzar</button>
+                </div>
+            </div>
+            <div id="video-box-container">
+                <h2>Un chequeo antes de empezar<img class="exit-btn" src="./assets/close.svg" alt="boton cerrar"></h2>
+                <video id="video-content"></video>
+                <div class="video-buttons-container">
+                    <button class="record-btn" id="capture-img"><img id="camera-img" src="./assets/camera.svg" alt="boton camara"></button>
+                    <button class="record-btn" id="recording-buttom">Capturar</button>
+                </div>
+            </div>
+            <div id="preview-box-container">
+                <h2>Vista Previa</h2>
+                <div id="preview-box">
+                    <img id="preview-gif" src="./" alt="vista previa del gif">
+                    <div id="preview-buttons-container"></div>
+                </div>
+            </div>
+            <div id="success-box-container">
+                <h2>Guifo cargado con Exito</h2>
+                <div id="success-box">
+                    <img id="upload-gif" src="./" alt="vista previa del gif subido">
+                    <div id="success-buttons-container">
+                        <h3>Guifo creado con exito</h3>
+                        <button class="button-theme-cancel" id="copyLinkGif">Copiar Enlace Guifo</button>
+                        <button class="button-theme-cancel" id="downloadGif">Descargar Guifo</button>
+                    </div>
+                </div>
+                <button id="finally-ok">Listo</button>
+            </div>
+        </section>
+        <section id="my-gifs">
+            <div class="label-bar">
+                <label>Mis guifos</label>
+            </div>
+            <div id="gifs-container" class ="gifs-box"></div>
+        </section>
+    </main>
+</body>
+</html>
